@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my simple webpage layout</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="container fade-in">
+        <h2>Home</h2>
+        <p>Welcome to the home section of my website! Here, you’ll find a quick introduction and an overview of what this site has to offer.</p>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <div class="accordion">
+        <div class="accordion-item">
+            <button class="accordion-header">Custom Website Design</button>
+            <div class="accordion-content">
+                <p>Creating unique, responsive websites tailored to your brand.</p>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <button class="accordion-header">Technical Support & Maintenance</button>
+            <div class="accordion-content">
+                <p>Keeping your website updated and secure.</p>
+            </div>
+        </div>
+    
+        <div class="accordion-item">
+            <button class="accordion-header">UI/UX Design</button>
+            <div class="accordion-content">
+                <p>Designing interfaces for a smooth user experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <h3>Welcome to My Portfolio</h3>
+            <p>Explore my projects, skills, and accomplishments.</p>
+            <img src="images/portfolio.webp" alt="Welcome image" style="width: 100%; max-height: 200px; object-fit: cover;">
+        </div>
+        
+        <div class="carousel-slide">
+            <h3>Project Highlights</h3>
+            <p>Take a look at some of the exciting projects I’ve worked on.</p>
+            <img src="images/projects.webp" alt="Project highlights" style="width: 100%; max-height: 200px; object-fit: cover;">
+        </div>
+        
+        <div class="carousel-slide">
+            <h3>Let’s Work Together</h3>
+            <p>Interested in collaborating? Reach out, and let’s bring your ideas to life!</p>
+            <img src="images/collaboration.webp" alt="Collaboration image" style="width: 100%; max-height: 200px; object-fit: cover;">
+        </div>
+    
+        <!-- Left Arrow -->
+        <div class="carousel-arrow left-arrow" onclick="prevSlide()">&#10094;</div>
+
+        <!-- Right Arrow -->
+        <div class="carousel-arrow right-arrow" onclick="nextSlide()">&#10095;</div>
+    
+        <div class="carousel-indicators">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 My Website</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/mahammad-mammadli-51b8b0302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/magalad" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
